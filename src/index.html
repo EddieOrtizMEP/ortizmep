@@ -57,26 +57,44 @@
 {
   "@context": "https://schema.org",
   "@type": ["ProfessionalService", "LocalBusiness"],
+  "@id": "https://ortizmep.com/#organization",
   "name": "Ortiz Engineering",
+  "alternateName": "Ortiz MEP",
   "url": "https://ortizmep.com",
   "description": "Licensed PE mechanical engineering consulting in Los Angeles. HVAC design, energy compliance, MEP peer review, and expert consulting.",
+  "email": "eddie@ortizmep.com",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Los Angeles",
+    "addressLocality": "Gardena",
     "addressRegion": "CA",
+    "postalCode": "90248",
     "addressCountry": "US"
   },
-  "areaServed": "Los Angeles, CA",
-  "hasCredential": "Licensed Professional Engineer (PE), California",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "33.8886",
+    "longitude": "-118.3090"
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "33.8886",
+      "longitude": "-118.3090"
+    },
+    "geoRadius": "80000"
+  },
+  "priceRange": "$$$",
+  "hasCredential": [
+    "Licensed Professional Engineer (PE), California",
+    "Title 24 Certified",
+    "ASHRAE Member"
+  ],
   "serviceType": ["HVAC Design", "MEP Peer Review", "Energy Compliance", "CFD Analysis", "Schematic MEP Design"],
+  "knowsAbout": ["Title 24", "ASHRAE 90.1", "Mechanical Engineering", "HVAC Systems", "Energy Modeling", "Laboratory HVAC", "MEP Engineering"],
   "sameAs": [
     "https://www.linkedin.com/company/ortiz-engineering"
-  ],
-  "creator": {
-    "@type": "SoftwareApplication",
-    "name": "Perplexity Computer",
-    "url": "https://www.perplexity.ai/computer"
-  }
+  ]
 }
 </script>
 
