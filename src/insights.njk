@@ -1,3 +1,6 @@
+---
+permalink: /insights/index.html
+---
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
@@ -102,69 +105,35 @@
     <div class="container">
       <div class="insights-grid">
 
-        
+        {% for post in collections.insights %}
         <article class="article-card fade-in">
-          <a href="/insights/title-24-2025-what-changed/" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%;">
-            
+          <a href="{{ post.url }}" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%;">
+            {% if post.data.featuredImage %}
             <div class="article-card-image">
-              <img src="/assets/hero.webp" alt="Title 24-2025: What Changed for Mechanical Engineers" width="800" height="450" loading="lazy" decoding="async">
+              <img src="{{ post.data.featuredImage }}" alt="{{ post.data.title }}" width="800" height="450" loading="lazy" decoding="async">
             </div>
-            
+            {% endif %}
             <div class="article-card-body">
-              
-              <span class="article-tag">Energy Compliance</span>
-              
-              <h3>Title 24-2025: What Changed for Mechanical Engineers</h3>
-              
-              <p>California&#39;s latest energy code update brings significant changes to HVAC efficiency requirements, heat pump mandates, and documentation procedures.</p>
-              
-              <div class="article-meta">March 2026 · 6 min read</div>
+              {% if post.data.tag %}
+              <span class="article-tag">{{ post.data.tag }}</span>
+              {% endif %}
+              <h3>{{ post.data.title }}</h3>
+              {% if post.data.excerpt %}
+              <p>{{ post.data.excerpt }}</p>
+              {% else %}
+              <p>{{ post.content | excerpt }}</p>
+              {% endif %}
+              <div class="article-meta">{{ post.date | dateShort }} · {{ post.content | readingTime }}</div>
             </div>
           </a>
         </article>
-        
-        <article class="article-card fade-in">
-          <a href="/insights/ashrae-90-1-2022-key-mechanical-provisions/" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%;">
-            
-            <div class="article-card-image">
-              <img src="/assets/services-bg.webp" alt="ASHRAE 90.1-2022: Key Mechanical Provisions" width="800" height="450" loading="lazy" decoding="async">
-            </div>
-            
-            <div class="article-card-body">
-              
-              <span class="article-tag">Standards</span>
-              
-              <h3>ASHRAE 90.1-2022: Key Mechanical Provisions</h3>
-              
-              <p>A practical summary of the mechanical provisions that matter most for commercial HVAC design — economizer requirements, fan power limits, and energy recovery mandates.</p>
-              
-              <div class="article-meta">February 2026 · 5 min read</div>
-            </div>
-          </a>
-        </article>
-        
-        <article class="article-card fade-in">
-          <a href="/insights/designing-hvac-bsl2-laboratories/" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%;">
-            
-            <div class="article-card-image">
-              <img src="/assets/about-bg.webp" alt="Designing HVAC for BSL-2 Laboratories: Pressurization &amp; Exhaust" width="800" height="450" loading="lazy" decoding="async">
-            </div>
-            
-            <div class="article-card-body">
-              
-              <span class="article-tag">Lab Design</span>
-              
-              <h3>Designing HVAC for BSL-2 Laboratories: Pressurization &amp; Exhaust</h3>
-              
-              <p>Lab HVAC isn&#39;t just about air changes — it&#39;s about directional airflow, containment integrity, and redundancy. A primer on getting BSL-2 mechanical systems right.</p>
-              
-              <div class="article-meta">January 2026 · 5 min read</div>
-            </div>
-          </a>
-        </article>
-        
+        {% endfor %}
 
-        
+        {% if collections.insights.length == 0 %}
+        <div style="grid-column: 1 / -1; text-align: center; padding: var(--space-12) 0;">
+          <p style="color: var(--color-text-muted);">Articles coming soon. Check back for technical insights on HVAC design, energy compliance, and mechanical engineering.</p>
+        </div>
+        {% endif %}
 
       </div>
     </div>
