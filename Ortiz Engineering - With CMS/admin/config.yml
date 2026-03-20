@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "insights"
+    label: "Insights"
+    folder: "src/insights"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "article.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Category Tag", name: "tag", widget: "string", required: false, hint: "e.g. Energy Compliance, Lab Design, Standards" }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false, hint: "Short summary shown on the listing page (1-2 sentences)" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false, hint: "Recommended: 1200x675px" }
+      - { label: "Meta Title (SEO)", name: "metaTitle", widget: "string", required: false, hint: "Overrides title in browser tab and Google results. Keep under 60 characters." }
+      - { label: "Meta Description (SEO)", name: "metaDescription", widget: "text", required: false, hint: "Shown in Google search results. Keep under 155 characters." }
+      - { label: "Body", name: "body", widget: "markdown" }
