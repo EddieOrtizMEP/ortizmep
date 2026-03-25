@@ -6,6 +6,15 @@ A running record of every change made to the site. Use this to track updates and
 
 ## March 25, 2026
 
+### Replaced service images with unique visuals
+- **What:** Generated 12 unique AI images for all service blocks across the site, replacing the 3 reused stock images (hero.webp, services-bg.webp, about-bg.webp). Each service now has its own distinct visual. Converted all images from PNG to WebP for performance.
+- **Images added:** `svc-peer-review.webp`, `svc-energy-compliance.webp`, `svc-schematic-design.webp`, `svc-consulting.webp`, `svc-cfd.webp`, `svc-energy-modeling.webp`, `svc-hvac-energy-model.webp`, `svc-compressible-pipe.webp`, `svc-hydronic-pipe.webp`, `svc-daylighting.webp`, `svc-glare.webp`, `svc-lcca.webp`
+- **Files:** `src/assets/` (12 new WebP images), `src/services.html` (6 img tags updated), `src/services/energy-modeling.html` (6 img tags updated)
+
+### Submitted sitemap to Google Search Console
+- **What:** Added Google verification file (`google616067ad3253c26e.html`), verified ownership, and submitted `sitemap.xml` to GSC
+- **Files:** `src/google616067ad3253c26e.html` (new), `.eleventy.js` (updated passthrough)
+
 ### Added Energy Modeling service page
 - **What:** Created new dedicated page at `/services/energy-modeling` with 6 sub-services: HVAC Energy Modeling, Compressible Fluid Pipe Modeling, Non-Compressible Fluid Pipe Modeling, Daylighting Analysis, Glare Analysis, Life Cycle Cost Analysis
 - **Files:** `src/services/energy-modeling.html` (new)
