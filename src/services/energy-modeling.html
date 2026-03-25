@@ -20,8 +20,15 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services — Ortiz Engineering</title>
-<meta name="description" content="MEP peer review, ASHRAE 90.1 and Title 24 energy compliance, schematic MEP design, CFD analysis, and expert consulting. Clear scope, clear pricing.">
+<title>Energy Modeling Services — Ortiz Engineering</title>
+<meta name="description" content="HVAC energy modeling, pipe system simulation, daylighting and glare analysis, and life cycle cost studies. IESVE-based building performance consulting in Los Angeles.">
+
+<link rel="canonical" href="https://ortizmep.com/services/energy-modeling" />
+
+<meta property="og:title" content="Energy Modeling Services — Ortiz Engineering" />
+<meta property="og:description" content="HVAC energy modeling, pipe system simulation, daylighting and glare analysis, and life cycle cost studies. IESVE-based building performance consulting in Los Angeles." />
+<meta property="og:url" content="https://ortizmep.com/services/energy-modeling" />
+<meta property="og:type" content="website" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,51 +44,56 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Schematic MEP Design",
+    "name": "HVAC Energy Modeling",
     "provider": { "@id": "https://ortizmep.com/#organization" },
-    "serviceType": "Mechanical Engineering Design",
-    "description": "Schematic-level MEP design for architects and developers. Ductwork sizing, equipment selection, and load calculations.",
-    "areaServed": "Los Angeles, CA",
-    "offers": { "@type": "Offer", "price": "8000", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "8000", "priceCurrency": "USD", "unitText": "starting price" } }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Expert Consulting",
-    "provider": { "@id": "https://ortizmep.com/#organization" },
-    "serviceType": "Mechanical Engineering Consulting",
-    "description": "Hourly consulting for code compliance, design review, energy modeling, and MEP coordination.",
-    "areaServed": "Los Angeles, CA",
-    "offers": { "@type": "Offer", "price": "300", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "300", "priceCurrency": "USD", "unitText": "per hour" } }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "CFD Analysis",
-    "provider": { "@id": "https://ortizmep.com/#organization" },
-    "serviceType": "Computational Fluid Dynamics Analysis",
-    "description": "CFD simulation for airflow optimization, thermal comfort, and HVAC system performance validation.",
-    "areaServed": "Los Angeles, CA",
-    "offers": { "@type": "Offer", "price": "5000", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "5000", "priceCurrency": "USD", "unitText": "starting price" } }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "MEP Peer Review",
-    "provider": { "@id": "https://ortizmep.com/#organization" },
-    "serviceType": "MEP Engineering Peer Review",
-    "description": "Independent technical review of mechanical, electrical, and plumbing engineering drawings for code compliance and design optimization.",
+    "serviceType": "Building Energy Simulation",
+    "description": "Building energy simulation using IESVE for performance compliance (Title 24, ASHRAE 90.1) and HVAC system optimization.",
     "areaServed": "Los Angeles, CA"
   },
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Energy Modeling",
+    "name": "Compressible Fluid Pipe Modeling",
     "provider": { "@id": "https://ortizmep.com/#organization" },
-    "serviceType": "Building Energy Simulation",
-    "description": "HVAC energy modeling, pipe system simulation, daylighting and glare analysis, and life cycle cost studies using IESVE.",
-    "areaServed": "Los Angeles, CA",
-    "url": "https://ortizmep.com/services/energy-modeling"
+    "serviceType": "Pipe System Analysis",
+    "description": "High pressure gas and steam system analysis for sizing, pressure drop, and flow distribution.",
+    "areaServed": "Los Angeles, CA"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Non-Compressible Fluid Pipe Modeling",
+    "provider": { "@id": "https://ortizmep.com/#organization" },
+    "serviceType": "Pipe System Analysis",
+    "description": "Chilled water, hot water, and domestic water system modeling for hydraulic performance and equipment sizing.",
+    "areaServed": "Los Angeles, CA"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Daylighting Analysis",
+    "provider": { "@id": "https://ortizmep.com/#organization" },
+    "serviceType": "Daylighting Simulation",
+    "description": "Annual and point-in-time daylight simulation for architectural spaces, supporting LEED and Title 24 daylighting credits.",
+    "areaServed": "Los Angeles, CA"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Glare Analysis",
+    "provider": { "@id": "https://ortizmep.com/#organization" },
+    "serviceType": "Visual Comfort Analysis",
+    "description": "Visual comfort and glare probability studies for occupied spaces using annual glare metrics.",
+    "areaServed": "Los Angeles, CA"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Life Cycle Cost Analysis",
+    "provider": { "@id": "https://ortizmep.com/#organization" },
+    "serviceType": "Cost Analysis",
+    "description": "Long-term cost comparison of MEP system alternatives including energy costs, maintenance, and replacement cycles.",
+    "areaServed": "Los Angeles, CA"
   }
 ]
 </script>
@@ -143,163 +155,151 @@
   <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <p class="section-eyebrow fade-in">Our Services</p>
-      <h1 class="fade-in">Engineering Services with Clear Scope &amp; Pricing</h1>
-      <p class="lead fade-in">Every engagement is scoped to a specific deliverable. No open-ended hourly billing (except when you want it). We focus on mechanical and plumbing engineering for commercial and institutional projects.</p>
+      <p class="section-eyebrow fade-in"><a href="/services" style="color:inherit;text-decoration:none;">Services</a> &rarr; Energy Modeling</p>
+      <h1 class="fade-in">Energy Modeling Services</h1>
+      <p class="lead fade-in">Building performance simulation, pipe system analysis, daylighting studies, and life cycle cost evaluation — using IESVE and industry-standard tools to support design decisions with data.</p>
     </div>
   </section>
 
-  <!-- SERVICES IMAGE -->
-  <section class="section" style="padding-bottom:0;">
-    <div class="container">
-      <img src="/assets/services-bg.webp" alt="Mechanical systems and HVAC ductwork in a commercial building" class="services-hero-image fade-in" width="1200" height="400" loading="lazy" decoding="async">
-    </div>
-  </section>
-
-  <!-- SERVICE 1: MEP Peer Review -->
-  <section class="section" id="peer-review">
+  <!-- SERVICE 1: HVAC Energy Modeling -->
+  <section class="section" id="hvac-energy-modeling">
     <div class="container">
       <div class="service-block fade-in">
         <div class="service-block-content">
           <span class="service-number">01</span>
-          <h3>MEP Peer Review</h3>
-          <p>An independent, third-party review of mechanical and plumbing construction documents. We check code compliance (IMC, IPC, ASHRAE 90.1), coordination with architectural and structural drawings, equipment sizing, and constructability — drawing on years of design-build experience to catch issues before they become change orders.</p>
+          <h3>HVAC Energy Modeling</h3>
+          <p>Whole-building energy simulation for performance compliance and system optimization. We model HVAC systems in IESVE to evaluate energy use, compare design alternatives, and produce permit-ready compliance documentation for ASHRAE 90.1 and California Title 24. Over a decade of modeling experience across laboratories, higher education, commercial, and healthcare facilities.</p>
           <ul class="service-deliverables" role="list">
-            <li>Marked-up plan review with comment log</li>
-            <li>Code compliance checklist (IMC, IPC, ASHRAE)</li>
-            <li>Constructability assessment</li>
-            <li>Equipment sizing verification</li>
-            <li>Written summary report</li>
+            <li>Whole-building energy simulation (IESVE)</li>
+            <li>ASHRAE 90.1 Appendix G / Performance Rating Method</li>
+            <li>Title 24 performance approach compliance</li>
+            <li>System comparison and optimization studies</li>
+            <li>Annual energy cost projections</li>
           </ul>
-          <div class="service-price">Starting at $2,500</div>
-          <a class='btn btn-outline' href='/contact' style='align-self:flex-start;margin-top:var(--space-2);'>Request a Review</a>
+          <a class='btn btn-outline' href='/contact' style='align-self:flex-start;margin-top:var(--space-2);'>Discuss Your Project</a>
         </div>
         <div class="service-block-visual">
-          <img src="/assets/services-bg.webp" alt="Engineering drawings and plan review" width="600" height="450" loading="lazy" decoding="async">
+          <img src="/assets/hero.webp" alt="HVAC energy modeling and building simulation" width="600" height="450" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICE 2: Energy Compliance -->
-  <section class="section section-alt" id="energy">
+  <!-- SERVICE 2: Compressible Fluid Pipe Modeling -->
+  <section class="section section-alt" id="compressible-pipe">
     <div class="container">
       <div class="service-block fade-in">
         <div class="service-block-content">
           <span class="service-number">02</span>
-          <h3>Energy Compliance</h3>
-          <p>Complete ASHRAE 90.1 and California Title 24 energy compliance modeling and documentation. We produce permit-ready packages using IESVE — the same tool we've used for over a decade across laboratory, higher education, and commercial projects. Familiar with South Bay and greater LA authority-having-jurisdiction (AHJ) processes.</p>
+          <h3>Compressible Fluid Pipe Modeling</h3>
+          <p>Simulation and analysis of high-pressure gas and steam piping systems. We model compressible fluid behavior to properly size piping, evaluate pressure drop across distribution networks, and verify system performance under varying load conditions — critical for laboratory gas systems, campus steam distribution, and industrial process piping.</p>
           <ul class="service-deliverables" role="list">
-            <li>IESVE energy model (10+ years experience)</li>
-            <li>ASHRAE 90.1 compliance documentation</li>
-            <li>Title 24 compliance forms and certificates</li>
-            <li>Permit-ready submission package</li>
-            <li>AHJ coordination support</li>
+            <li>Steam distribution system modeling</li>
+            <li>Laboratory gas piping analysis</li>
+            <li>Pressure drop and flow distribution calculations</li>
+            <li>Pipe sizing verification for high-pressure systems</li>
+            <li>System capacity and expansion analysis</li>
           </ul>
-          <div class="service-price">Starting at $3,500</div>
-          <a class='btn btn-outline' href='/contact' style='align-self:flex-start;margin-top:var(--space-2);'>Start Compliance Work</a>
+          <a class='btn btn-outline' href='/contact' style='align-self:flex-start;margin-top:var(--space-2);'>Request an Analysis</a>
         </div>
         <div class="service-block-visual">
-          <img src="/assets/hero.webp" alt="Energy modeling and compliance analysis" width="600" height="450" loading="lazy" decoding="async">
+          <img src="/assets/services-bg.webp" alt="Compressible fluid pipe system modeling" width="600" height="450" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICE 3: Schematic MEP Design -->
-  <section class="section" id="schematic">
+  <!-- SERVICE 3: Non-Compressible Fluid Pipe Modeling -->
+  <section class="section" id="non-compressible-pipe">
     <div class="container">
       <div class="service-block fade-in">
         <div class="service-block-content">
           <span class="service-number">03</span>
-          <h3>Schematic MEP Design</h3>
-          <p>30% schematic mechanical and plumbing design for new construction and major renovations. Includes a basis-of-design narrative, equipment layouts, preliminary load calculations, and enough detail for early cost estimating. Particularly experienced with labs, vivariums, and fume hood-intensive facilities — environments where air quality, pressurization, and exhaust design are non-negotiable.</p>
+          <h3>Non-Compressible Fluid Pipe Modeling</h3>
+          <p>Hydraulic modeling of chilled water, hot water, condenser water, and domestic water systems. We evaluate pipe sizing, pump head requirements, flow balancing, and system performance to ensure reliable hydronic distribution — from central plant loops to terminal unit connections.</p>
           <ul class="service-deliverables" role="list">
-            <li>Basis of design narrative</li>
-            <li>Equipment layouts and schedules</li>
-            <li>Preliminary heating/cooling load calculations</li>
-            <li>Plumbing riser diagrams</li>
-            <li>ROM cost estimating support</li>
+            <li>Chilled and hot water loop modeling</li>
+            <li>Domestic water system sizing and analysis</li>
+            <li>Pump head and flow balancing calculations</li>
+            <li>Condenser water system evaluation</li>
+            <li>System performance under part-load conditions</li>
           </ul>
-          <div class="service-price">Starting at $8,000</div>
-          <a class='btn btn-outline' href='/contact' style='align-self:flex-start;margin-top:var(--space-2);'>Discuss Your Project</a>
+          <a class='btn btn-outline' href='/contact' style='align-self:flex-start;margin-top:var(--space-2);'>Discuss Your System</a>
         </div>
         <div class="service-block-visual">
-          <img src="/assets/about-bg.webp" alt="Schematic mechanical design and layout" width="600" height="450" loading="lazy" decoding="async">
+          <img src="/assets/about-bg.webp" alt="Hydronic pipe system modeling and analysis" width="600" height="450" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICE 4: Expert Consulting -->
-  <section class="section section-alt" id="consulting">
+  <!-- SERVICE 4: Daylighting Analysis -->
+  <section class="section section-alt" id="daylighting">
     <div class="container">
       <div class="service-block fade-in">
         <div class="service-block-content">
           <span class="service-number">04</span>
-          <h3>Expert Consulting</h3>
-          <p>Hourly engineering consulting for when you need targeted expertise without a full project engagement. Available for HVAC system assessments, plumbing and piping analysis, lab and vivarium system reviews, fume hood exhaust design, campus utility infrastructure, and energy study feasibility. Also available through expert networks (GLG, Guidepoint, AlphaSights, Tegus).</p>
+          <h3>Daylighting Analysis</h3>
+          <p>Annual and point-in-time daylight simulation for architectural spaces. We model spatial daylight autonomy (sDA), annual sunlight exposure (ASE), and daylight factor to evaluate glazing performance, shading strategies, and interior layout decisions — supporting LEED v4.1 daylighting credits and Title 24 daylighting requirements.</p>
           <ul class="service-deliverables" role="list">
-            <li>HVAC system assessments and troubleshooting</li>
-            <li>Lab, vivarium, and fume hood system consulting</li>
-            <li>Energy study feasibility analysis</li>
-            <li>Due diligence technical reviews</li>
-            <li>Expert network engagements</li>
+            <li>Spatial Daylight Autonomy (sDA) analysis</li>
+            <li>Annual Sunlight Exposure (ASE) evaluation</li>
+            <li>LEED v4.1 EQ Daylight credit documentation</li>
+            <li>Title 24 daylighting compliance support</li>
+            <li>Shading and glazing performance comparison</li>
           </ul>
-          <div class="service-price">$300 / hour</div>
-          <a class='btn btn-outline' href='/contact' style='align-self:flex-start;margin-top:var(--space-2);'>Schedule a Consultation</a>
+          <a class='btn btn-outline' href='/contact' style='align-self:flex-start;margin-top:var(--space-2);'>Request a Study</a>
         </div>
         <div class="service-block-visual">
-          <img src="/assets/hero.webp" alt="Expert engineering consultation" width="600" height="450" loading="lazy" decoding="async">
+          <img src="/assets/hero.webp" alt="Daylighting analysis and simulation" width="600" height="450" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICE 5: CFD Analysis -->
-  <section class="section" id="cfd">
+  <!-- SERVICE 5: Glare Analysis -->
+  <section class="section" id="glare">
     <div class="container">
       <div class="service-block fade-in">
         <div class="service-block-content">
           <span class="service-number">05</span>
-          <h3>CFD Analysis</h3>
-          <p>Computational fluid dynamics modeling for complex airflow environments where standard engineering calculations aren't enough. We simulate real-world conditions to validate ventilation strategies, optimize airflow patterns, and identify turbulence issues before construction — reducing risk and avoiding costly field modifications.</p>
+          <h3>Glare Analysis</h3>
+          <p>Visual comfort and glare probability studies for occupied spaces where screen use, patient care, or focused work demands controlled daylight. We model Daylight Glare Probability (DGP) and Unified Glare Rating (UGR) to identify problem zones and evaluate mitigation strategies — shading devices, glazing tints, interior finishes — before construction.</p>
           <ul class="service-deliverables" role="list">
-            <li>Underground garage ventilation strategies &amp; jet fan layouts</li>
-            <li>Paint booth laminar flow design &amp; validation</li>
-            <li>Clean room airflow modeling &amp; classification verification</li>
-            <li>Fume hood face velocity &amp; turbulence analysis</li>
-            <li>Thermal comfort &amp; contaminant dispersion studies</li>
+            <li>Daylight Glare Probability (DGP) modeling</li>
+            <li>Unified Glare Rating (UGR) evaluation</li>
+            <li>Point-in-time glare renderings</li>
+            <li>Shading strategy comparison and optimization</li>
+            <li>Occupant comfort zone mapping</li>
           </ul>
-          <div class="service-price">Starting at $5,000</div>
-          <a class='btn btn-outline' href='/contact' style='align-self:flex-start;margin-top:var(--space-2);'>Discuss CFD Scope</a>
+          <a class='btn btn-outline' href='/contact' style='align-self:flex-start;margin-top:var(--space-2);'>Discuss Glare Concerns</a>
         </div>
         <div class="service-block-visual">
-          <img src="/assets/services-bg.webp" alt="CFD airflow simulation and analysis" width="600" height="450" loading="lazy" decoding="async">
+          <img src="/assets/services-bg.webp" alt="Glare analysis and visual comfort study" width="600" height="450" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICE 6: Energy Modeling -->
-  <section class="section section-alt" id="energy-modeling">
+  <!-- SERVICE 6: Life Cycle Cost Analysis -->
+  <section class="section section-alt" id="lcca">
     <div class="container">
       <div class="service-block fade-in">
         <div class="service-block-content">
           <span class="service-number">06</span>
-          <h3>Energy Modeling</h3>
-          <p>Building performance simulation, pipe system analysis, daylighting studies, glare evaluation, and life cycle cost comparison. We use IESVE and industry-standard tools to answer the performance questions that drive design decisions — from early feasibility through permit documentation.</p>
+          <h3>Life Cycle Cost Analysis</h3>
+          <p>Long-term cost comparison of MEP system alternatives — evaluating first cost, annual energy expense, maintenance burden, and replacement cycles over the building's expected life. We produce clear side-by-side comparisons so owners, developers, and architects can make informed investment decisions backed by data rather than assumptions.</p>
           <ul class="service-deliverables" role="list">
-            <li>HVAC energy modeling (IESVE)</li>
-            <li>Compressible &amp; non-compressible fluid pipe modeling</li>
-            <li>Daylighting analysis (sDA, ASE)</li>
-            <li>Glare analysis (DGP, UGR)</li>
-            <li>Life cycle cost analysis (LCCA)</li>
+            <li>Net present value (NPV) comparison of MEP alternatives</li>
+            <li>Energy cost projections with escalation rates</li>
+            <li>Maintenance and replacement cycle analysis</li>
+            <li>Simple payback and ROI calculations</li>
+            <li>Executive summary with recommendation</li>
           </ul>
-          <a class='btn btn-outline' href='/services/energy-modeling' style='align-self:flex-start;margin-top:var(--space-2);'>View Full Details &rarr;</a>
+          <a class='btn btn-outline' href='/contact' style='align-self:flex-start;margin-top:var(--space-2);'>Request a Cost Study</a>
         </div>
         <div class="service-block-visual">
-          <img src="/assets/hero.webp" alt="Energy modeling and building performance simulation" width="600" height="450" loading="lazy" decoding="async">
+          <img src="/assets/about-bg.webp" alt="Life cycle cost analysis for MEP systems" width="600" height="450" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -308,9 +308,9 @@
   <!-- CTA -->
   <section class="cta-section fade-in">
     <div class="container">
-      <h2>Not Sure Which Service Fits?</h2>
-      <p>Every project is different. Reach out and we'll scope the right engagement for your needs — no obligation.</p>
-      <a class='btn btn-primary' href='/contact'>Let's Talk</a>
+      <h2>Need a Custom Modeling Scope?</h2>
+      <p>Every project has different performance questions. Reach out and we'll scope the right analysis for your needs.</p>
+      <a class='btn btn-primary' href='/contact'>Get in Touch</a>
     </div>
   </section>
 
